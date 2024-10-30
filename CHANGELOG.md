@@ -8,6 +8,22 @@ and this project adheres to
 
 ## [Unreleased]
 
+## [0.2.12](https://github.com/rust-lang/libm/compare/libm-v0.2.11...libm-v0.2.12) - 2024-10-30
+
+### Other
+
+- Rename `canonical_name` to `base_name`
+- Add float and integer traits from compiler-builtins
+- Move architecture-specific code to `src/math/arch`
+- Update `select_implementation` to accept arch configuration
+- Add an "arch" Cargo feature that is on by default
+- Vendor `cfg_if::cfg_if!`
+- Make use of `select_implementation`
+- Introduce a `select_implementation` macro
+- Introduce `math::arch::intrinsics`
+- Replace `feature = "unstable-intrinsics"` with `intrinsics_enabled`
+- Move the existing "unstable" feature to "unstable-intrinsics"
+
 ## [0.2.11](https://github.com/rust-lang/libm/compare/libm-v0.2.10...libm-v0.2.11) - 2024-10-28
 
 ### Fixed
